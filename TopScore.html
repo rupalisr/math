@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="mystyle4.css">
+<script src="abc1.js">
+</script>
+</head>
+<body onload="LoadPage()">
+<h2 id="users"></h2>
+<h6 id="topScore">Top Score : </h6>
+<button onclick="LoadTopScores()">View Top Score</button>
+<script>
+	function LoadTopScores () {
+		
+		if(localStorage.getItem("TopScore")==null){
+				document.getElementById("topScore").innerHTML="You didn't Play a Single game..";
+			}
+			else{
+				document.getElementById("topScore").innerHTML="Top Score : "+localStorage.getItem("TopScore");
+				document.getElementById("users").innerHTML="  "+localStorage.getItem("name");
+			}
+	}
+	function LoadPage () {
+		
+		if(localStorage.getItem("name")==null){
+			alert("User Not found");
+			window.location = "login.html";
+		}
+		else{
+			document.getElementById("usern").innerHTML =" "+localStorage.getItem("name");
+		}
+		
+
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="mystyle2.css">
+<script src="abc1.js">
+</script>
+</head>
+<body onload="LoadPage()">
+<h1><u><b>Math Game</b></u></h1>
+<p id="usern">userName</p><br><br>
+<button><a href="Game.html">Play</a></button><br>
+<button onclick="LoadTopScores()">Top Scores</button>
+<script>
+	function LoadTopScores () {
+		
+		window.location = "TopScore.html";
+	}
+	function LoadPage () {
+	
+		if(localStorage.getItem("name")==null){
+			alert("User Not found");
+			window.location = "login.html";
+		}
+		else{
+			document.getElementById("usern").innerHTML = ""+localStorage.getItem("name");
+		}
+		
+
+	}
+</script>
+</body>
+</html>

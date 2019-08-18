@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>my page</title>
+<script src="abc1.js"></script>
+<link type="text/css" rel="stylesheet" href="mystyle3.css">
+</head>
+<body onload="operator()">
+<h1>Play Game</h1>
+<p id="level">Level:0</p>
+<p id="user"></p>
+<p id="score">Score:0</p>
+<p id="ques"></p>
+<input type="radio" onclick="storeTempRes(this.value)" name="math" value="op1"><p id="op1"></p>
+<input type="radio" onclick="storeTempRes(this.value)" name="math" value="op2"><p id="op2"></p>
+<input type="radio" onclick="storeTempRes(this.value)" name="math" value="op3"><p id="op3"></p>
+<input type="radio" onclick="storeTempRes(this.value)" name="math" value="op4"><p id="op4"></p>
+<input type="submit" onClick="ValidateAnswer()" value="submit"></input>
+</body>
+</html>

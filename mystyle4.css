@@ -1,0 +1,25 @@
+body{
+	background-image:url("22.jpeg");
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+button{
+	width:20%;
+	border:5px solid gray;
+	font-size:20px;
+	background-color:blue;
+	text-align:center;
+	font-weight:bold;
+	border-radius:12px;
+	padding:14px 20px;
+	margin-left:450px;
+	margin-top:30px;
+	color:white;
+}
+h6{
+	color:black;
+	width:90%;
+	font-size:30px;
+	margin-top:120px;
+	margin-left:30px;
+}

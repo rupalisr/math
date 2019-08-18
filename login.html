@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>my page</title>
+<link type="text/css" rel="stylesheet" href="mystyle1.css">
+
+</head>
+<body>
+
+
+<h1>Login</h1><br><br>
+
+<form name="form1" >
+<label for="fname" style="font-size:150%;color:white;font-weight:bold">User Name</label><br>
+<input type="text" id="fname" placeholder="Enter your name" name="username" pattern="[A-Za-z].{6,}" title="username is not valid"  required></input><br>
+<label for="pass" style="font-size:150%;color:white;font-weight:bold;" >Password</label><br>
+<input type="password" id="pass" placeholder="Enter your password" name="fpass"  pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,13})" 
+                                                         title="password is not valid" required></input>
+														 
+<p><a href="Register.html" style="font-color:white;">forget password?</a></p>														 
+<input type="submit" value="Login" id="btn" onclick="validateForm()" ></input><br><br>
+<button><a href="Register.html">Register?</a> </button>
+
+
+</form>
+
+<script>
+
+	function validateForm(){
+    
+
+	var a=document.getElementById("pass").value;
+    var n=document.getElementById("fname").value;
+    
+    if(typeof(Storage)!=="undefined"){
+    	if(a == localStorage.getItem("pass") && n == localStorage.getItem("name")){
+            alert("login done");
+    		window.open("math.html");
+
+    	}
+    	else{
+    		alert("login fail");
+    	}
+    }
+    else{
+    	alert("Storage Not possible");
+    }
+	
+
+   
+}
+</script>
+
+
+</body>
+</html>

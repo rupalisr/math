@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>my page</title>
+<link type="text/css" rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+
+<h1>Register</h1><br><br>
+
+<form name="form1" >
+<label for="fname" style="font-size:150%;color:white;font-weight:bold;">UserName</label><br>
+<input type="text" id="fname" placeholder="Enter your name" name="username" pattern="[A-Za-z]{6,}" title="username is not valid"  required ></input><br>
+<label for="pass" style="font-size:150%;color:white;font-weight:bold;" >Password</label><br>
+<input type="password" id="pass" placeholder="Enter your password" name="fpass"  pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,13})" 
+                      title="password is not valid" required ></input><br>
+<label for="repass" style="font-size:150%;color:white;">Re-enter Password</label><br>
+<input type="password" id="repass" placeholder="Re-enter your password" name="repass" required></input><br><br>
+<button onclick="validateForm()">Register</button><br><br>
+<button><a href="login.html">Login?</a></button>
+
+</form>
+
+
+<script>
+
+  function validateForm(){
+        var a=document.getElementById("pass").value;
+		var b=document.getElementById("repass").value;
+    	var n=document.getElementById("fname").value;
+		
+    if(a=="" && n==" "){
+	   alert("Please enter the fields");
+	}
+
+    if(typeof(Storage)!=="undefined"){
+    	var a=document.getElementById("pass").value;
+		var b=document.getElementById("repass").value;
+    	var n=document.getElementById("fname").value;	
+    	if(a!=b){
+	  		alert("password should match");
+		}
+		else{
+			localStorage.setItem("name" , ""+n);
+			localStorage.setItem("pass" , ""+a);
+		    alert("Succesfully Registered");
+			
+			window.open("login.html");
+		}
+    }
+    else{
+    	alert("Storage not supported");
+    }
+	
+
+   
+}
+
+</script>
+</body>
+</html>

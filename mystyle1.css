@@ -1,0 +1,55 @@
+input[type="text"],[type=password]{
+	width:47%;
+	padding:12px 20px;
+	margin-top:8px;
+	border:3px solid gray ;
+	
+	
+	
+}
+body{
+	 background-image:url("prof1.jpg");
+	 background-position:center;
+	 background-size:cover;
+	 background-repeat:no-repeat;
+}
+input[type="submit"]{
+	
+	width:50%;
+	padding:12px 20px;
+	border:5px solid gray;
+	font-size:20px;
+	background-color:powderblue;
+	text-align:center;
+	font-weight:bold;
+}
+input[type="submit"]:hover{
+	background-color:MediumSeaGreen;
+}
+h1{
+	color:white;
+	text-shadow: 3px 2px MediumSeaGreen;
+	width:90%;
+	font-size:30px;
+	
+}
+p{
+	color:white;
+	font-size:20px;
+	text-align:right-side;
+	padding-left:420px;
+	
+	
+}
+button:hover{
+	background-color:MediumSeaGreen;
+}
+button{
+	width:50%;
+	padding:12px 20px;
+	border:5px solid gray;
+	font-size:20px;
+	background-color:powderblue;
+	text-align:center;
+	font-weight:bold;
+}

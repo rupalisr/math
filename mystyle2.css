@@ -1,0 +1,37 @@
+h1{
+	color:black;
+	text-shadow: 3px 2px MediumSeaGreen;
+	width:120%;
+	font-size:30px;
+	margin-left:520px;
+	margin-top:50px;
+	font-weight:bold;
+}
+button{
+	width:20%;
+	border:5px solid gray;
+	font-size:20px;
+	background-color:orange;
+	text-align:center;
+	font-weight:bold;
+	border-radius:12px;
+	padding:14px 20px;
+	margin-left:450px;
+	margin-top:30px;
+	text-color:white;
+	color:white;
+}
+button:hover{
+	background-image:url("a2.jfif");
+}
+body{
+	background-image:url("m4.jpg");
+}
+p{
+	color:black;
+	width:120%;
+	font-size:25px;
+	margin-left:1020px;
+	margin-top:10px;
+	font-weight:bold;
+}

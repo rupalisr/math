@@ -1,0 +1,65 @@
+body{
+	 background-image:url("34.png");
+	 background-position:center;
+	 background-size:cover;
+	 background-repeat:no-repeat;
+	
+	
+}
+#user{
+    color:black;
+	width:120%;
+	font-size:25px;
+	margin-left:1020px;
+	font-weight:bold;
+	margin-top:1;
+}
+#ques{
+	color:black;
+	width:120%;
+	font-size:30px;
+	margin-left:20px;
+	margin-top:1px;
+	font-weight:bold;
+}
+h1{
+	color:MediumseaGreen;
+	text-shadow: 3px 2px black;
+	width:90%;
+	font-size:30px;
+	text-align:center;
+}
+#level{
+	color:black;
+	width:120%;
+	font-size:25px;
+	margin-left:10px;
+	font-weight:bold;
+	margin-top:1;
+}
+#op1,#op2,#op3,#op4{
+	color:black;
+	width:120%;
+	font-size:15px;
+	margin-left:40px;
+	font-weight:bold;
+	margin-top:1;
+}
+input[type="radio"]{
+	
+	font-size:5px;
+	margin-left:20px;
+	margin-top:1;
+	font-weight:bold;
+}
+input[type="submit"]{
+	width:15%;
+	padding:3px 3px;
+	border:5px solid gray;
+	font-size:20px;
+	background-color:powderblue;
+	text-align:center;
+	font-weight:bold;
+	margin-left:530px;
+	height:40px;
+}
